@@ -1,0 +1,184 @@
+/* ── TABLETTE (≤ 1024px) ── */
+@media (max-width: 1024px) {
+  .about-grid {
+    grid-template-columns: 260px 1fr;
+    gap: 3rem;
+  }
+  .contact-grid {
+    gap: 2.5rem;
+  }
+  .hero-stats {
+    gap: 1.8rem;
+  }
+}
+
+/* ── MOBILE LARGE (≤ 768px) ── */
+@media (max-width: 768px) {
+  /* Navbar */
+  .nav-links {
+    display: none;
+  }
+  nav {
+    padding: 0 4%;
+  }
+
+  /* Hero */
+  #hero {
+    flex-direction: column;
+    padding: 90px 5% 50px;
+    align-items: flex-start;
+  }
+  .hero-stats {
+    position: static;
+    margin-top: 2.5rem;
+    gap: 2rem;
+  }
+  .hero-accent {
+    width: 300px;
+    height: 300px;
+    top: -60px;
+    right: -60px;
+  }
+
+  /* À propos */
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .about-badge {
+    display: none;
+  }
+  .about-items {
+    grid-template-columns: 1fr;
+  }
+  .about-photo {
+    aspect-ratio: 4/3;
+  }
+
+  /* Galerie */
+  .galerie-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Contact */
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  /* Planning */
+  .planning-table {
+    font-size: 0.8rem;
+  }
+  .planning-table th,
+  .planning-table td {
+    padding: 8px 6px;
+  }
+
+  /* Sections */
+  section {
+    padding: 70px 5%;
+  }
+}
+
+/* ── MOBILE PETIT (≤ 480px) ── */
+@media (max-width: 480px) {
+  section {
+    padding: 55px 4%;
+  }
+
+  /* Hero */
+  .hero-title {
+    font-size: 2rem;
+  }
+  .hero-sub {
+    font-size: 0.97rem;
+  }
+  .hero-btns {
+    flex-direction: column;
+  }
+  .btn-primary,
+  .btn-outline {
+    width: 100%;
+    text-align: center;
+    padding: 13px 24px;
+  }
+  .hero-stats {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  /* Navbar */
+  .nav-logo {
+    font-size: 1.05rem;
+  }
+  .lang-btn {
+    padding: 4px 8px;
+    font-size: 0.72rem;
+  }
+
+  /* Galerie */
+  .galerie-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Tarifs */
+  .tarifs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Cours */
+  .cours-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Footer */
+  footer {
+    font-size: 0.8rem;
+  }
+
+  /* Floating WhatsApp */
+  .wa-float {
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+  }
+  html[dir="rtl"] .wa-float {
+    right: auto;
+    left: 20px;
+  }
+  .wa-float svg {
+    width: 24px;
+    height: 24px;
+  }
+  .wa-tooltip {
+    display: none;
+  }
+}
+
+/* ── TRÈS PETIT (≤ 360px) ── */
+@media (max-width: 360px) {
+  .lang-switcher {
+    gap: 2px;
+  }
+  .lang-btn {
+    padding: 3px 7px;
+  }
+  .hero-stats {
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+/* ── RTL MOBILE ── */
+@media (max-width: 768px) {
+  html[dir="rtl"] .hero-stats {
+    left: auto;
+    right: auto;
+  }
+  html[dir="rtl"] .hero-accent {
+    left: auto;
+    right: -60px;
+  }
+}

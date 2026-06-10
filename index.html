@@ -1,0 +1,705 @@
+<!doctype html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Prof. HABBOUCHE Anes </title>
+
+
+    <!-- ── POLICES GOOGLE FONTS ── -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+3:wght@300;400;600&family=Cairo:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ── STYLES ── -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+  </head>
+  <body>
+    <!-- ══════════════════════════════════════
+     NAVBAR
+══════════════════════════════════════ -->
+    <nav>
+      <a href="#hero" class="nav-logo">Prof. HABBOUCHE Anes</a>
+      <div class="nav-right">
+        <ul class="nav-links">
+          <li><a href="#apropos" data-i18n="nav_about"></a></li>
+          <li><a href="#cours" data-i18n="nav_courses"></a></li>
+          <li><a href="#planning" data-i18n="nav_planning"></a></li>
+          <li><a href="#tarifs" data-i18n="nav_pricing"></a></li>
+          <li><a href="#temoignages" data-i18n="nav_reviews"></a></li>
+          <li>
+            <a href="#contact" class="nav-cta" data-i18n="nav_contact"></a>
+          </li>
+        </ul>
+        <!-- Sélecteur de langue -->
+        <div class="lang-switcher">
+          <button class="lang-btn active" onclick="setLang('fr')">FR</button>
+          <button class="lang-btn" onclick="setLang('en')">EN</button>
+          <button class="lang-btn" onclick="setLang('ar')">ع</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ══════════════════════════════════════
+     HERO
+══════════════════════════════════════ -->
+    <section id="hero">
+      <div class="hero-grid-bg"></div>
+      <div class="hero-accent"></div>
+      <div class="hero-content fade-in">
+        <span class="hero-badge" data-i18n="hero_badge"></span>
+        <h1 class="hero-title" data-i18n-html="hero_title"</h1>
+        <p class="hero-sub" data-i18n="hero_sub"></p>
+        <div class="hero-btns">
+          <a href="#contact" class="btn-primary" data-i18n="hero_btn1"></a>
+          <a href="#cours" class="btn-outline" data-i18n="hero_btn2"></a>
+        </div>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">3+</span>
+          <span class="stat-label" data-i18n="stat1"></span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">80+</span>
+          <span class="stat-label" data-i18n="stat2"></span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">97%</span>
+          <span class="stat-label" data-i18n="stat3"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+     À PROPOS
+══════════════════════════════════════ -->
+    <section id="apropos">
+      <div class="about-grid">
+        <!-- Photo -->
+        <div class="about-photo-wrap fade-in">
+          <div class="about-photo">
+            <div class="photo-placeholder">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"
+                />
+              </svg>
+              <img src="1.jpg" alt="Photo du professeur" />
+            </div>
+          </div>
+          <div class="about-badge">
+            <strong>3+</strong>
+            <span data-i18n="about_badge_label"></span>
+          </div>
+        </div>
+
+        <!-- Texte -->
+        <div class="about-text fade-in">
+          <p class="section-label" data-i18n="about_label"></p>
+          <h2 class="section-title">Prof. Anes HABBOUCHE</h2>
+          <div class="title-line"></div>
+          <p data-i18n="about_p1"></p>
+          <p data-i18n="about_p2"></p>
+          <div class="about-items">
+            <div class="about-item">
+              <div>
+                <div
+                  class="about-item-text"
+                  data-i18n="about_item1_title"
+                ></div>
+                <div class="about-item-sub" data-i18n="about_item1_sub"></div>
+              </div>
+            </div>
+            <div class="about-item">
+              <div>
+                <div
+                  class="about-item-text"
+                  data-i18n="about_item2_title"
+                ></div>
+                <div class="about-item-sub" data-i18n="about_item2_sub"></div>
+              </div>
+            </div>
+            <div class="about-item">
+              <div>
+                <div
+                  class="about-item-text"
+                  data-i18n="about_item3_title"
+                ></div>
+                <div class="about-item-sub" data-i18n="about_item3_sub"></div>
+              </div>
+            </div>
+            <div class="about-item">
+              <div>
+                <div
+                  class="about-item-text"
+                  data-i18n="about_item4_title"
+                ></div>
+                <div class="about-item-sub" data-i18n="about_item4_sub"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+     COURS
+══════════════════════════════════════ -->
+    <section id="cours">
+      <p
+        class="section-label"
+        style="text-align: center"
+        data-i18n="courses_label"
+      ></p>
+      <h2
+        class="section-title"
+        style="text-align: center"
+        data-i18n="courses_title"
+      ></h2>
+      <div class="title-line center" style="margin: 0 auto 2.5rem"></div>
+
+      <div class="cours-grid">
+        <!-- Maths CEM -->
+        <div class="cours-card fade-in">
+          <div class="cours-card-header">
+            <div class="cours-icon">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
+                />
+              </svg>
+            </div>
+            <div>
+              <div class="cours-card-title" data-i18n="c1_title"></div>
+              <div class="cours-card-sub" data-i18n="c1_sub"></div>
+            </div>
+          </div>
+          <div class="cours-card-body">
+            <span class="niveau-tag gold" data-i18n="c1_level"></span>
+            <p class="specialite-note" data-i18n="c1_desc"></p>
+          </div>
+        </div>
+
+        <!-- Maths Lycée -->
+        <div class="cours-card fade-in">
+          <div class="cours-card-header">
+            <div class="cours-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M4 7h16M4 12h16M4 17h10" />
+              </svg>
+            </div>
+            <div>
+              <div class="cours-card-title" data-i18n="c2_title"></div>
+              <div class="cours-card-sub" data-i18n="c2_sub"></div>
+            </div>
+          </div>
+          <div class="cours-card-body">
+            <span class="niveau-tag" data-i18n="c2_l1"></span>
+            <span class="niveau-tag" data-i18n="c2_l2"></span>
+            <span class="niveau-tag gold" data-i18n="c2_l3"></span>
+            <p class="specialite-note" data-i18n-html="c2_desc"></p>
+          </div>
+        </div>
+
+        <!-- Électricité -->
+        <div class="cours-card fade-in">
+          <div class="cours-card-header">
+            <div class="cours-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+              </svg>
+            </div>
+            <div>
+              <div class="cours-card-title" data-i18n="c3_title"></div>
+              <div class="cours-card-sub" data-i18n="c3_sub"></div>
+            </div>
+          </div>
+          <div class="cours-card-body">
+            <span class="niveau-tag" data-i18n="c3_l1"></span>
+            <span class="niveau-tag gold" data-i18n="c3_l2"></span>
+            <p class="specialite-note" data-i18n-html="c3_desc"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+     PLANNING
+══════════════════════════════════════ -->
+    <section id="planning">
+      <p
+        class="section-label"
+        style="text-align: center; color: rgba(201, 168, 76, 0.8)"
+        data-i18n="planning_label"
+      ></p>
+      <h2
+        class="section-title light"
+        style="text-align: center"
+        data-i18n="planning_title"
+      ></h2>
+      <div class="title-line center" style="margin: 0 auto 2.5rem"></div>
+
+      <div class="planning-wrap fade-in">
+        <div class="planning-legend">
+          <div class="legend-item">
+            <div class="legend-dot" style="background: #e8c97a"></div>
+            <span data-i18n="legend_math"></span>
+          </div>
+          <div class="legend-item">
+            <div class="legend-dot" style="background: #7ab8f0"></div>
+            <span data-i18n="legend_elec"></span>
+          </div>
+        </div>
+        <div class="planning-table-wrap">
+          <table class="planning-table">
+            <thead>
+              <tr>
+                <th data-i18n="plan_day"></th>
+                <th data-i18n="plan_morning"></th>
+                <th data-i18n="plan_afternoon"></th>
+                <th data-i18n="plan_evening"></th>
+              </tr>
+            </thead>
+            <tbody id="planning-body">
+              <!-- Généré par script.js → buildPlanning() -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+     TARIFS
+══════════════════════════════════════ -->
+    <section id="tarifs">
+      <p
+        class="section-label"
+        style="text-align: center"
+        data-i18n="pricing_label"
+      ></p>
+      <h2
+        class="section-title"
+        style="text-align: center"
+        data-i18n="pricing_title"
+      ></h2>
+      <div class="title-line center" style="margin: 0 auto 2.5rem"></div>
+
+      <div class="tarifs-grid">
+        <!-- Cours individuel -->
+        <div class="tarif-card fade-in">
+          <div class="tarif-type" data-i18n="t1_type"></div>
+          <div class="tarif-price">1 500 <span data-i18n="t1_unit"></span></div>
+          <div class="tarif-desc" data-i18n="t1_desc"></div>
+          <ul class="tarif-list" id="t1-list">
+            <!-- Généré par script.js → buildPricingList() -->
+          </ul>
+        </div>
+
+        <!-- Forfait mensuel (recommandé) -->
+        <div class="tarif-card featured fade-in">
+          <div class="tarif-badge" data-i18n="t2_badge"></div>
+          <div class="tarif-type" data-i18n="t2_type"></div>
+          <div class="tarif-price">5 000 <span data-i18n="t2_unit"></span></div>
+          <div class="tarif-desc" data-i18n="t2_desc"></div>
+          <ul class="tarif-list" id="t2-list"></ul>
+        </div>
+
+        <!-- Petit groupe -->
+        <div class="tarif-card fade-in">
+          <div class="tarif-type" data-i18n="t3_type"></div>
+          <div class="tarif-price">900 <span data-i18n="t3_unit"></span></div>
+          <div class="tarif-desc" data-i18n="t3_desc"></div>
+          <ul class="tarif-list" id="t3-list"></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+     TÉMOIGNAGES
+══════════════════════════════════════ -->
+    <section id="temoignages">
+      <p
+        class="section-label"
+        style="text-align: center"
+        data-i18n="reviews_label"
+      ></p>
+      <h2
+        class="section-title"
+        style="text-align: center"
+        data-i18n="reviews_title"
+      ></h2>
+      <div class="title-line center" style="margin: 0 auto 2.5rem"></div>
+
+      <div class="temoignages-grid">
+        <div class="temoignage-card fade-in">
+          <div class="stars">★★★★★</div>
+          <p class="temoignage-text" data-i18n="r1_text"></p>
+          <div class="temoignage-author">
+            <div class="author-avatar">YB</div>
+            <div>
+              <div class="author-name">Ngawes</div>
+              <div class="author-level" data-i18n="r1_level"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="temoignage-card fade-in">
+          <div class="stars">★★★★★</div>
+          <p class="temoignage-text" data-i18n="r2_text"></p>
+          <div class="temoignage-author">
+            <div class="author-avatar">SM</div>
+            <div>
+              <div class="author-name">Rameh</div>
+              <div class="author-level" data-i18n="r2_level"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="temoignage-card fade-in">
+          <div class="stars">★★★★★</div>
+          <p class="temoignage-text" data-i18n="r3_text"></p>
+          <div class="temoignage-author">
+            <div class="author-avatar">KA</div>
+            <div>
+              <div class="author-name">Yaciiine SAAhbi</div>
+              <div class="author-level" data-i18n="r3_level"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+     GALERIE
+══════════════════════════════════════ -->
+    <section id="galerie">
+      <p
+        class="section-label"
+        style="text-align: center"
+        data-i18n="gallery_label"
+      ></p>
+      <h2
+        class="section-title"
+        style="text-align: center"
+        data-i18n="gallery_title"
+      ></h2>
+      <div class="title-line center" style="margin: 0 auto 2.5rem"></div>
+
+      <div class="galerie-grid">
+        <!-- Remplace les placeholders par de vraies <img src="..."> -->
+        <div class="galerie-item fade-in">
+          <div class="galerie-placeholder">
+            <img src="1.jpg" alt="Photo du professeur" />
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"
+              />
+            </svg>
+            <span data-i18n="gallery_add"></span>
+          </div>
+          <div class="galerie-overlay" data-i18n="gallery_view"></div>
+        </div>
+        <div class="galerie-item fade-in">
+          <div class="galerie-placeholder">
+            <img src="1.jpg" alt="Photo du professeur" />
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"
+              />
+            </svg>
+            <span data-i18n="gallery_add"></span>
+          </div>
+          <div class="galerie-overlay" data-i18n="gallery_view"></div>
+        </div>
+        <div class="galerie-item fade-in">
+          <div class="galerie-placeholder">
+            <img src="1.jpg" alt="Photo du professeur" />
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"
+              />
+            </svg>
+            <span data-i18n="gallery_add"></span>
+          </div>
+          <div class="galerie-overlay" data-i18n="gallery_view"></div>
+        </div>
+        <div class="galerie-item fade-in">
+          <div class="galerie-placeholder">
+            <img src="1.jpg" alt="Photo du professeur" />
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"
+              />
+            </svg>
+            <span data-i18n="gallery_add"></span>
+          </div>
+          <div class="galerie-overlay" data-i18n="gallery_view"></div>
+        </div>
+        <div class="galerie-item fade-in">
+          <div class="galerie-placeholder">
+            <img src="1.jpg" alt="Photo du professeur" />
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"
+              />
+            </svg>
+            <span data-i18n="gallery_add"></span>
+          </div>
+          <div class="galerie-overlay" data-i18n="gallery_view"></div>
+        </div>
+        <div class="galerie-item fade-in">
+          <div class="galerie-placeholder">
+            <img src="1.jpg" alt="Photo du professeur" />
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"
+              />
+            </svg>
+            <span data-i18n="gallery_add"></span>
+          </div>
+          <div class="galerie-overlay" data-i18n="gallery_view"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+     CONTACT
+══════════════════════════════════════ -->
+    <section id="contact">
+      <p
+        class="section-label"
+        style="text-align: center; color: rgba(201, 168, 76, 0.8)"
+        data-i18n="contact_label"
+      ></p>
+      <h2
+        class="section-title light"
+        style="text-align: center"
+        data-i18n="contact_title"
+      ></h2>
+      <div class="title-line center" style="margin: 0 auto 2.5rem"></div>
+
+      <div class="contact-grid">
+        <!-- Informations de contact -->
+        <div class="fade-in">
+          <p
+            style="
+              color: rgba(255, 255, 255, 0.65);
+              margin-bottom: 2rem;
+              font-size: 1.05rem;
+            "
+            data-i18n="contact_intro"
+          ></p>
+          <div class="contact-info-items">
+            <!-- Téléphone / WhatsApp -->
+            <div class="contact-info-item">
+              <div class="contact-icon">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#C9A84C"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <div
+                  class="contact-info-label"
+                  data-i18n="ci_phone_label"
+                ></div>
+                <div class="contact-info-value">
+                  <a
+                    id="tel-link"
+                    href="tel:+213793259517"
+                    style="
+                      color: inherit;
+                      text-decoration: none;
+                      border-bottom: 1px dotted rgba(255, 255, 255, 0.3);
+                    "
+                  >
+                    07 93 25 95 17 </a
+                  ><br />
+                  <a
+                    id="wa-inline-link"
+                    href="#"
+                    target="_blank"
+                    rel="noopener"
+                    style="
+                      color: var(--gold);
+                      font-size: 0.85rem;
+                      text-decoration: none;
+                    "
+                  >
+                     WHATSAPP
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Adresse -->
+            <div class="contact-info-item">
+              <div class="contact-icon">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#C9A84C"
+                  stroke-width="2"
+                >
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+              </div>
+              <div>
+                <div class="contact-info-label" data-i18n="ci_addr_label"></div>
+                <div
+                  class="contact-info-value"
+                  data-i18n-html="ci_addr_value"
+                ></div>
+              </div>
+            </div>
+
+            <!-- Cours en ligne -->
+            <div class="contact-info-item">
+              <div class="contact-icon">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#C9A84C"
+                  stroke-width="2"
+                >
+                  <rect x="2" y="3" width="20" height="14" rx="2" />
+                  <path d="M8 21h8M12 17v4" />
+                </svg>
+              </div>
+              <div>
+                <div
+                  class="contact-info-label"
+                  data-i18n="ci_online_label"
+                ></div>
+                <div
+                  class="contact-info-value"
+                  data-i18n-html="ci_online_value"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Formulaire de contact -->
+        <div class="contact-form-card fade-in">
+          <p class="form-title" data-i18n="form_title"></p>
+
+          <div class="form-group" id="fg-name">
+            <label data-i18n="form_name"></label>
+            <input
+              type="text"
+              id="inp-name"
+              data-i18n-placeholder="form_name_ph"
+            />
+            <span class="form-error" id="err-name"></span>
+          </div>
+
+          <div class="form-group" id="fg-phone">
+            <label data-i18n="form_phone"></label>
+            <input type="tel" id="inp-phone" placeholder="07 93 25 95 17" />
+            <span class="form-error" id="err-phone"></span>
+          </div>
+
+          <div class="form-group" id="fg-level">
+            <label data-i18n="form_level"></label>
+            <select id="sel-level">
+              <option
+                value=""
+                disabled
+                selected
+                data-i18n="form_level_ph"
+              ></option>
+              <option data-i18n="lvl1"></option>
+              <option data-i18n="lvl2"></option>
+              <option data-i18n="lvl3"></option>
+              <option data-i18n="lvl4"></option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label data-i18n="form_subject"></label>
+            <select id="sel-subject">
+              <option
+                value=""
+                disabled
+                selected
+                data-i18n="form_subject_ph"
+              ></option>
+              <option data-i18n="subj1"></option>
+              <option data-i18n="subj2"></option>
+              <option data-i18n="subj3"></option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label data-i18n="form_msg"></label>
+            <textarea
+              id="inp-msg"
+              data-i18n-placeholder="form_msg_ph"
+            ></textarea>
+          </div>
+
+          <button
+            class="btn-submit"
+            onclick="handleSubmit()"
+            data-i18n="form_send"
+          ></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+     FOOTER
+══════════════════════════════════════ -->
+    <footer>
+      <p
+        style="
+          margin-bottom: 0.4rem;
+          font-family: &quot;Playfair Display&quot;, serif;
+          color: rgba(201, 168, 76, 0.7);
+          font-size: 1rem;
+        "
+      >
+        Prof. Anes HABBOUCHE — <span data-i18n="footer_sub"></span>
+      </p>
+      <p data-i18n="footer_info"></p>
+    </footer>
+
+    <!-- ══════════════════════════════════════
+     BOUTON FLOTTANT WHATSAPP
+══════════════════════════════════════ -->
+    <a
+      id="wa-float-btn"
+      href="#"
+      target="_blank"
+      rel="noopener"
+      class="wa-float"
+      aria-label="WhatsApp"
+    >
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"
+        />
+        <path
+          d="M12 0C5.373 0 0 5.373 0 12c0 2.123.558 4.116 1.535 5.845L.057 23.04a.75.75 0 00.906.899l5.347-1.461A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.71 9.71 0 01-4.978-1.369l-.357-.213-3.701 1.011 1.037-3.593-.233-.368A9.712 9.712 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"
+        />
+      </svg>
+      <span class="wa-tooltip" id="wa-tooltip-text">WhatsApp</span>
+    </a>
+
+    <!-- ══════════════════════════════════════
+     SCRIPT
+══════════════════════════════════════ -->
+    <script src="script.js"></script>
+  </body>
+</html>
