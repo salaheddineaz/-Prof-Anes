@@ -372,7 +372,7 @@ const translations = {
     nav_reviews: "آراء",
     nav_contact: "تواصل معنا",
 
-    hero_badge: "دروس خصوصية – وهران",
+    hero_badge: "دروس خصوصية – تيبازة",
     hero_title: "التميّز في<br><span>الرياضيات</span><br>والكهرباء",
     hero_sub:
       "مرافقة فردية لتلاميذ السنة الرابعة متوسط والسنوات الأولى والثانية والثالثة ثانوي — جميع الشعب. دعم متخصص في الكهرباء لشعبة الهندسة الكهربائية.",
@@ -507,7 +507,7 @@ const translations = {
 
     form_title: "طلب دروس",
     form_name: "الاسم الكامل",
-    form_name_ph: "مثال: كريمة بن سالم",
+    form_name_ph: "مثال:  علي تت ",
     form_phone: "رقم الهاتف",
     form_level: "المستوى الدراسي",
     form_level_ph: "اختر المستوى",
@@ -528,7 +528,7 @@ const translations = {
     err_name: "يرجى إدخال اسمك.",
     err_phone: "يرجى إدخال رقم هاتفك.",
     wa_tooltip: "تواصل عبر واتساب",
-    wa_msg_hello: "مرحباً أستاذ بن علي، أودّ حجز درس.",
+    wa_msg_hello: "مرحباً أستاذ حبوش أنس، أودّ حجز درس.",
     wa_msg_name: "الاسم",
     wa_msg_phone: "الهاتف",
     wa_msg_level: "المستوى",
