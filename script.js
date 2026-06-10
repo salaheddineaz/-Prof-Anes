@@ -23,14 +23,8 @@ const translations = {
       "Accompagnement personnalisé pour les élèves de 4ème CEM, 1ère, 2ème et 3ème année lycée — toutes spécialités. Soutien spécialisé en électricité pour génie électricité.",
     hero_btn1: "Réserver un cours",
     hero_btn2: "Voir les programmes",
-    hero_cta_courses: "Découvrir les cours",
-    hero_cta_courses_desc: "Maths, Physique & plus",
-    hero_cta_contact: "Me contacter",
-    hero_cta_contact_desc: "Réponse sous 24h",
 
     stat1: "Années d'exp.",
-    stat2: "Élèves suivis",
-    stat3: "Taux de réussite",
     stat2: "Élèves suivis",
     stat3: "Taux de réussite",
 
@@ -207,14 +201,8 @@ const translations = {
       "Personalized support for students in 4th CEM, 1st, 2nd and 3rd year high school — all specialties. Specialized electricity coaching for electrical engineering students.",
     hero_btn1: "Book a lesson",
     hero_btn2: "View programs",
-    hero_cta_courses: "Discover courses",
-    hero_cta_courses_desc: "Maths, Physics & more",
-    hero_cta_contact: "Contact me",
-    hero_cta_contact_desc: "Response within 24h",
 
     stat1: "Years of exp.",
-    stat2: "Students taught",
-    stat3: "Success rate",
     stat2: "Students taught",
     stat3: "Success rate",
 
@@ -384,16 +372,12 @@ const translations = {
     nav_reviews: "آراء",
     nav_contact: "تواصل معنا",
 
-    hero_badge: "دروس خصوصية - تيبازة",
+    hero_badge: "دروس خصوصية – وهران",
     hero_title: "التميّز في<br><span>الرياضيات</span><br>والكهرباء",
     hero_sub:
       "مرافقة فردية لتلاميذ السنة الرابعة متوسط والسنوات الأولى والثانية والثالثة ثانوي — جميع الشعب. دعم متخصص في الكهرباء لشعبة الهندسة الكهربائية.",
     hero_btn1: "احجز درساً",
     hero_btn2: "عرض البرامج",
-    hero_cta_courses: "اكتشف الدروس",
-    hero_cta_courses_desc: "رياضيات، فيزياء والمزيد",
-    hero_cta_contact: "تواصل معي",
-    hero_cta_contact_desc: "رد خلال 24 ساعة",
 
     stat1: "سنوات خبرة",
     stat2: "تلميذ تم متابعتهم",
@@ -412,7 +396,7 @@ const translations = {
     about_item2_title: "الكهرباء",
     about_item2_sub: "السنة 2 و3 ثانوي – هندسة كهربائية",
     about_item3_title: "دروس في المنزل",
-    about_item3_sub: "التنقل في تيبازة",
+    about_item3_sub: "التنقل في وهران",
     about_item4_title: "دروس إلكترونية",
     about_item4_sub: "عبر Zoom / WhatsApp",
 
@@ -523,7 +507,7 @@ const translations = {
 
     form_title: "طلب دروس",
     form_name: "الاسم الكامل",
-    form_name_ph: "مثال: علي  ",
+    form_name_ph: "مثال: كريمة بن سالم",
     form_phone: "رقم الهاتف",
     form_level: "المستوى الدراسي",
     form_level_ph: "اختر المستوى",
@@ -544,7 +528,7 @@ const translations = {
     err_name: "يرجى إدخال اسمك.",
     err_phone: "يرجى إدخال رقم هاتفك.",
     wa_tooltip: "تواصل عبر واتساب",
-    wa_msg_hello: "مرحباً أستاذ حبوش أنس، أودّ حجز درس.",
+    wa_msg_hello: "مرحباً أستاذ بن علي، أودّ حجز درس.",
     wa_msg_name: "الاسم",
     wa_msg_phone: "الهاتف",
     wa_msg_level: "المستوى",
